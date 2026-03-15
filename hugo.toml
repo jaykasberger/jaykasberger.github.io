@@ -1,0 +1,10 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+theme = 'FortyTen'
+title = 'Doing Things and Writing About Them'
+
+[params]
+  mainSections = ["projects"]
+  
+[markup.goldmark.renderer]
+  unsafe = true
