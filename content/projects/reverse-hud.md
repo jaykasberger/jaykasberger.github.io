@@ -52,7 +52,7 @@ Claude did a superb job, of course, but it's always interesting to see the ways 
 
 ### The Result
 
-{{< figure src="/images/results.png" caption="The reverse HUD in action" alt="reverse HUD results" >}}
+{{< figure src="/images/results.png" caption="Ladies and gentlemen, give it up for Gray Man Group" alt="reverse HUD results" >}}
 <div style="display: flex; gap: 1rem;">
   <video controls width="33%">
     <source src="/videos/spectrogram.mp4" type="video/mp4">
