@@ -8,17 +8,17 @@ tags = ["hardware", "maker", "XIAO"]
 ![reverse HUD](/images/reverse-hud-clock.jpg)
 
 I was lucky enough to score an invitation to the Pi Day "Mars Colony Program" party, hosted by the 
-wonderful and innovative people at [Pebblebed Ventures](https://pebblebedventures.com).  Pebblebed transformed their workspace into a Mars exploration facility, asking us (in writing, even!) to suspend our disbelief and contemplate our impending journey to the Red Planet.  There were various activity stations that were surprisingly, delightfully philosophical in nature, and the atmosphere they created was nothing short of transformative.  Yes it was terrific fun, but it was also one of the most _thoughtful_ events I've attended in a long, long time.
+wonderful and innovative people at [Pebblebed Ventures](https://pebblebedventures.com).  Pebblebed transformed their workspace into a Mars exploration facility, asking us (in writing, even!) to suspend our disbelief and contemplate our impending journey to the Red Planet.  The activity stations were surprisingly, delightfully philosophical in nature, and the atmosphere they created was nothing short of transformative.  Super fun, but it was also one of the most _thoughtful_ events I've attended in a long, long time.
 
-Participants were required to dress entirely in red.  I bought some garish red pants I'll probably never wear again, and they were still worth every penny and every stare I received en route.  Since the attire already had a bit of costume element to it, and since we were asked to bring one thing we'd either leave on Earth or take to Mars, I decided to build a bit of tech I'd need on the journey, and maybe make a bit of a statement in the process.
+Participants were required to dress entirely in red.  I bought some garish red pants I'll probably never wear again, and they were still worth every penny.  Since we were asked to bring one thing we'd either leave on Earth or take to Mars, I decided to build a bit of tech I'd need on the journey, and maybe make a bit of a statement in the process.
 
 ### The Idea
 
-Heads-up displays (HUDs) are a staple of sci-fi cool.  Fighter helmets, Terminator eyes, cyberpunk mods: they appeal to the power fantasy of being able to see what everyone else cannot, of having knowledge floating right in front that's just for you.  I'd even say the "detection" sequences in the BBC's _Sherlock_ are a form of HUD, just the thing powering Sherlock's HUD is superhuman deduction rather than a CPU.  But the underlying theme is still there.  A heads-up display gives you data and leverage you didn't have before, and presumably that others still don't.  Like so much digital technolgoy, it's about turning information into power.
+Heads-up displays (HUDs) are a staple of sci-fi cool.  Fighter helmets, Terminator eyes, cyberpunk mods: they appeal to the power fantasy of seeing what everyone else cannot, of having knowledge floating right in front that's just for you.  I'd even say the "detection" sequences in the BBC's _Sherlock_ are a form of HUD, except what's powering Sherlock's HUD is superhuman deduction rather than a CPU.  But the underlying theme is still there.  A heads-up display gives you data and leverage you didn't have before, and presumably that others still don't.  Like so much digital technolgoy, it's about turning information into power.
 
 What if we turned that around, though?  What if we made a HUD that provides data to everyone else?  That would invert the usual technology power dynamic and make the device about sharing instead of personal advantage.
 
-Okay, let me admit that a lot of this is philosophical retrofitting.  A real, wearable HUD requires fairly complex optics and/or projection elements.  I don't have the time, money, or expertise to build a waveguide rig or integrate a Micro LED with a prism.  But what I can do is put a trasparent OLED in my field of vision and power it with a microcontroller.
+Okay, I'll admit that a lot of this is philosophical retrofitting.  A real, wearable HUD requires fairly complex optics and projection elements.  I don't have the time, money, or expertise to build a waveguide rig or integrate a Micro LED with a prism.  But what I can do is put a trasparent OLED in my field of vision and power it with a microcontroller.
 
 ### Parts
 
