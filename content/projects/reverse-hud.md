@@ -62,6 +62,6 @@ Claude did a superb job, of course, but it's always interesting to see the ways 
   </video>
 </div>
 
-In short, the Reverse HUD was a lot of fun and a huge hit.  And, it sparked several conversations about what the tradeoffs we make when we intermediate the connections between ourselves and others with technology.  Most of all, wearing it was my committment to the event's imaginary premise - I built the technology and I was heading to Mars, at least for Pi Day.
+In short, the Reverse HUD was a lot of fun and a huge hit.  And, it sparked several conversations about tradeoffs we make when we intermediate between ourselves and others with technology.  Most of all, wearing it was my committment to the event's imaginary premise - I built the technology and I was heading to Mars, at least for Pi Day.
 
 Finally, let me extent a huge thanks to the amazing Pebblebed Ventures for hosting the event.  If we do ever get to Mars, it'll be thanks to people like you.
