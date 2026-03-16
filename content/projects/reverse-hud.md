@@ -14,7 +14,7 @@ Participants were required to dress entirely in red.  I bought some garish red p
 
 ### The Idea
 
-Heads-up displays (HUDs) are a staple of sci-fi cool.  Fighter helmets, Terminator eyes, cyberpunk mods: they appeal to the power fantasy of seeing what everyone else cannot, of having knowledge floating right in front that's just for you.  I'd even say the "detection" sequences in the BBC's _Sherlock_ are a form of HUD, except what's powering Sherlock's HUD is superhuman deduction rather than a CPU.  But the underlying theme is still there.  A heads-up display gives you data and leverage you didn't have before, and presumably that others still don't.  Like so much digital technolgoy, it's about turning information into power.
+Heads-up displays (HUDs) are a staple of sci-fi cool.  Fighter helmets, Terminator eyes, cyberpunk mods: they appeal to the power fantasy of seeing what everyone else cannot, of having knowledge floating right in front that's just for you.  I'd even say the "detection" sequences in the BBC's _Sherlock_ are a form of HUD, except what's powering Sherlock's HUD is superhuman deduction rather than a CPU.  But the underlying theme is still there.  A heads-up display gives you data and leverage you didn't have before, and presumably that others still don't.  Like so much digital technology, it's about turning information into power.
 
 What if we turned that around, though?  What if we made a HUD that provides data to everyone else?  That would invert the usual technology power dynamic and make the device about sharing instead of personal advantage.
 
