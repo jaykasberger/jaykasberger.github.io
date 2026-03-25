@@ -13,7 +13,9 @@ History, and historians, are full of "what ifs."  What if the [typhoons of 1274 
 
 Here's another one for you: What if we could use machine learning to answer these what-ifs?
 
-First of all, let's get the spoiler alert out of the way: no, we can't, not in any meaningful way.  There's far too much essential data for any model to process, and most of that is lost forever in time.  More importantly, trying to predict "alternate histories" is basically a supervised learning problem for causality, but unless we can travel among parallel timelines, we don't have true labels to train on.  It's tempting to apply Judea Pearl's _do_-calculus and/or structural equation modeling to the problem, but the problem there is similar: we don't have many concrete, provable instances of causation in history, so it's extremely difficult to build a causal model.  
+First of all, let's get the spoiler alert out of the way: no, we can't, not in any meaningful way.  There's far too much essential data for any model to process, and most of that is lost forever in time.  More importantly, trying to predict "alternate histories" is basically a supervised learning problem for causality, but unless we can travel among parallel timelines, we don't have true labels to train on.  
+
+It's tempting to apply Judea Pearl's _do_-calculus and/or structural equation modeling to the problem, but the problem there is similar: we don't have many concrete, provable instances of causation in history, and historical causation itself can be extremely complex.  For example, there's a debatable though not-unreasonable theory that the Fukushima disaster in 2011 led to the 2022 invasion of Ukraine.  It's hard to imagine a model complex enough to predict a causal chain like that.
 
 What we _can_ do, however, is build a model around the history we do know, then do a bit of data manipulation to explore counterfactuals - as long as we're scrupulous about not asserting causation.  To do this, we can use GNNs, along with a few tricks to help us ask those "What If?" questions.
 
