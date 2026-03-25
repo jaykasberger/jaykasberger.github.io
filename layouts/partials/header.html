@@ -1,0 +1,89 @@
+<header class="pt-4 border-b border-orange-100 dark:border-orange-900 dark:bg-gray-900" x-data="{}">
+    <div class="container mx-auto py-8">
+        <div class="flex flex-row justify-between items-center">
+            <!-- Left side: hamburger (mobile) + logo -->
+            <div class="flex items-center gap-4">
+                <!-- Mobile hamburger button (hidden on lg and above) -->
+                <button
+                  id="mobile-menu-toggle"
+                  type="button"
+                  @click="$dispatch('mobile-menu-toggle')"
+                  class="lg:hidden text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+                  aria-label="Toggle mobile menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                >
+                  <ion-icon name="menu" class="text-xl" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div id="logo">
+                    <h1>
+                        <a href="{{ absURL "" }}" title="{{ site.Title }}"
+                           class="text-2xl antialiased font-extrabold hover:text-orange-600 dark:hover:text-orange-400 dark:text-gray-100 transition ease-in-out">{{ site.Title }}</a>
+                    </h1>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">done and written by Jay Kasberger</p>
+                </div>
+            </div>
+
+            <!-- Right side: Search (on mobile only) + Desktop menu and search (on lg+) -->
+            <div class="flex items-center gap-4">
+                <!-- Social links + theme toggle on mobile (hidden on lg+) -->
+                <div class="lg:hidden flex items-center gap-2">
+                    <a href="https://github.com/jaykasberger" target="_blank" rel="noopener noreferrer" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="GitHub" title="GitHub">
+                      <ion-icon name="logo-github" class="text-xl" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaykasberger/" target="_blank" rel="noopener noreferrer" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="LinkedIn" title="LinkedIn">
+                      <ion-icon name="logo-linkedin" class="text-xl" aria-hidden="true"></ion-icon>
+                    </a>
+                    {{ partial "theme-toggle.html" . }}
+                </div>
+
+                <!-- Search button on mobile (hidden on lg+) -->
+                {{- if site.Params.enableSiteSearch }}
+                <button
+                  id="search-mobile"
+                  type="button"
+                  @click="$dispatch('search-toggle')"
+                  class="lg:hidden text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+                  aria-label="Open search (mobile)"
+                  aria-expanded="false"
+                >
+                  <ion-icon name="search" class="text-xl" aria-hidden="true"></ion-icon>
+                </button>
+                {{- end }}
+
+                <!-- Desktop menu and search (hidden on mobile, visible on lg+) -->
+                <div class="hidden lg:flex lg:items-center lg:gap-6">
+                    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+
+                    <!-- Social links + theme toggle on desktop -->
+                    <a href="https://github.com/jaykasberger" target="_blank" rel="noopener noreferrer" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="GitHub" title="GitHub">
+                      <ion-icon name="logo-github" class="text-xl" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaykasberger/" target="_blank" rel="noopener noreferrer" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="LinkedIn" title="LinkedIn">
+                      <ion-icon name="logo-linkedin" class="text-xl" aria-hidden="true"></ion-icon>
+                    </a>
+                    {{ partial "theme-toggle.html" . }}
+
+                    <!-- Search button on desktop (after menu) -->
+                    {{- if site.Params.enableSiteSearch }}
+                    <button
+                      id="search-desktop"
+                      type="button"
+                      @click="$dispatch('search-toggle')"
+                      class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition ease-in-out p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
+                      aria-label="Open search"
+                      aria-expanded="false"
+                      aria-keyshortcuts="Cmd+K"
+                    >
+                      <ion-icon name="search" class="text-xl" aria-hidden="true"></ion-icon>
+                    </button>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile menu panel (rendered outside header, always in DOM) -->
+{{ partial "mobile-menu.html" (dict "menuID" "main" "page" .) }}
