@@ -119,7 +119,7 @@ For GraphSAGE, the macro F1 was 0.469, so significantly better, and the confusio
 
 {{< figure src="/images/wnb_conf_graphsage.png" caption="Testing the HGT ability to predict battle outcomes." alt="GraphSAGE" >}}
 
-HGT was almost certainly overfitting; it does better with significantly more data (and specifically, more edges), and that was made worse with the temporal masking we used.  But, both model types underperformed expectations.  In fact, I ran a simply MLP model on just the node attributes, and got a macro F1 above .5, higher than either one.  The graph connections were arguably confusing the model, not helping it.  With such unimpressive results, I didn't bother trying to perturb the data and test counterfactuals, e.g. removing Admiral Nimits from Midway to see what happens.  No sense trying to predict alternate histories when you don't even have a decent model of this one.
+HGT was almost certainly overfitting; it does better with significantly more data (and specifically, more edges), and that was made worse with the temporal masking we used.  But, both model types underperformed expectations.  In fact, I trained a simple MLP model on just the node attributes, and got a macro F1 above .5, higher than either one.  The graph connections were arguably confusing the model, not helping it.  With such unimpressive results, I didn't bother trying to perturb the data and test counterfactuals, e.g. removing Admiral Nimitz from Midway to see what happens.  No sense trying to predict alternate histories when you don't even have a decent model of this one.
 
 ## What Next?
 
