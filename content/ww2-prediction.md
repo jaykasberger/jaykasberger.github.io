@@ -7,6 +7,8 @@ tags = ["GNN", "history", "causality"]
 
 {{< figure src="/images/ww2-cytoscape.png" caption="Turns out WWII was pretty complicated." alt="Cytoscape view of WWII graph" >}}
 
+[_repo_](https://github.com/jaykasberger/wwii-causal-graph)
+
 History, and historians, are full of "what ifs."  What if the [typhoons of 1274 and 1281](https://www.britannica.com/event/kamikaze-of-1274-and-1281) hadn't stopped the Mongols from invading Japan?   What if Oliver Cromwell had gone through with [his plans to emigrate to America](https://en.wikipedia.org/wiki/Oliver_Cromwell#Crisis_and_recovery)?  What if [Chernobyl Unit 4](https://en.wikipedia.org/wiki/Chernobyl_disaster) hadn't exploded?
 
 Here's another one for you: What if we could use machine learning to answer these what-ifs?
