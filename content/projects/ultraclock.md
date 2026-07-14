@@ -7,7 +7,8 @@ tags = ["design", "electronics", "ai"]
 
 {{< figure src="/images/ultraclock.png" caption="How to make your kid hate AI." alt="UltraClock" >}}
 
- This is a brief study in technology and wishful thinking.
+
+This is a brief study in technology and wishful thinking.
 
  My son Andy always had a tough time getting out of bed for school.  And, I get it.  School was often boring for him, and it starts too early.  That second part isn't just grouchy sentiment, it's [peer-reviewed science](https://www.nea.org/nea-today/all-news-articles/does-school-start-too-early).  Kids need sleep, and lots of it.  They should be getting to school at 9am, but we've wrapped their schedules around ours.  As a result we have kids who are groggily choking down their Cheerios while the sun is still coming up and sleepwalking through their classes.
 
