@@ -10,7 +10,7 @@ tags = ["design", "electronics", "ai"]
 
 This is a brief study in technology and wishful thinking.
 
- My son Andy always had a tough time getting out of bed for school.  And, I get it.  School was often boring for him, and it starts too early.  That second part isn't just grouchy sentiment, it's [peer-reviewed science](https://www.nea.org/nea-today/all-news-articles/does-school-start-too-early).  Kids need sleep, and lots of it.  They should be getting to school at 9am, but we've wrapped their schedules around ours.  As a result we have kids who are groggily choking down their Cheerios while the sun is still coming up and sleepwalking through their classes.
+ My son Andy always had a tough time getting out of bed for school.  And, I get it.  School was often boring for him, and it starts too early.  That second part isn't just grouchy sentiment, it's [peer-reviewed science](https://www.nea.org/nea-today/all-news-articles/does-school-start-too-early).  Kids need sleep, and lots of it.  They should be getting to school at 9am, but we've wrapped their schedules around ours.  As a result we have kids who are groggily choking down their Cheerios while the sun is still coming up, and then sleepwalking through their classes.
 
  That's a problem to solve (and don't get me started on the boring-school thing).  I'm probably not the one to solve it.  So, in true Silicon Valley fashion, I threw AI at the problem instead.  
 
@@ -37,6 +37,10 @@ Next up: design an enclosure.  Once again, OnShape, my go-to CAD suite, came to 
   Next came the software.  I set up the alarms so that a randomly selected MP3 plays, and then the clock hits the OpenAI API to generate and text-to-speechify a custom wakeup greeting.  The default prompt is:
 
   `Write a personalized wake-up greeting for Andy.  Please announce the time, {current_time} and today's date, {current_date}.  Then say good morning in a randomly selected language, and tell Andy what language you chose.  Then add a historical event that happened on this day.  Finally, wish him a good day.`
+
+<video controls width="50%">
+    <source src="/videos/UltraClock.mp4" type="video/mp4">
+  </video>
 
   Since the clock also has that OLED, it generates a daily image as well.  After the ten-minute snooze, it issues a second, more urgent wakeup message.  Here's the fun part: when OpenAI released gpt-4o-mini-tts, I was able to give the trasnformer hints for tone and mood, so the snooze message is "in a serious, menacing voice," per the prompt.  In reality it's more fun-menacing, like "The Emperor's March" performed on a kazoo, but it gets the job done.
 

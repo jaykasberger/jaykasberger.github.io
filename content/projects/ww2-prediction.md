@@ -23,7 +23,7 @@ What we _can_ do, however, is build a model around the history we do know, then 
 
 For this project, I picked World War II as the era to model, for sevaral reasons:
 
-- The war happened in somewhat recent times, so the "fog of history" is still fairly thin.
+- The war happened in recent times, so the "fog of history" is still fairly thin.
 - The was isn't so recent that propaganda, misinformation and internet debates would drown out useful signals.
 - World War II was a complex and enormous event, so there are many data points to train on.
 
@@ -43,7 +43,7 @@ I picked these not just because they were the most immediately available "object
 
 ## Mining Wikipedia
 
-Once I chose the graph type, it was time to fill it with data.  I build a pipeline to traverse Wikipedia, downloading the Wikitext from articles that belonged to several "Battle of WWII" categories, and following links to supporting articles.  At first I tried building a parser for the Infoboxes that nearly every battle article has, like this one:
+Once I chose the graph type, it was time to fill it with data.  I built a pipeline to traverse Wikipedia, downloading the Wikitext from articles that belonged to several "Battle of WWII" categories, and following links to supporting articles.  At first I tried building a parser for the Infoboxes that nearly every battle article has, like this one:
 
 {{< figure style="max-width: 200px;" src="/images/infobox.png" caption="Infobox: It's Info, In a Box™" alt="Infobox example" width="200px">}}
 
