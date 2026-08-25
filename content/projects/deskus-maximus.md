@@ -45,3 +45,5 @@ I got to thinking about the desktop itself.  Why are desks flat?  So you can wri
 {{< figure src="/images/deskus9.jpg" alt="Deskus Maximus" >}}
 
 {{< figure src="/images/deskus10.jpg" alt="Deskus Maximus" >}}
+
+One fun side effect I didn't anticipate: the miniature arch and field of grass combine into an optical illusion that make my desk look _enormous_.  It feels like a brisk two-minute stroll to get from one end to the other now.
